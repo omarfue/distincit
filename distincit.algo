@@ -1,0 +1,15 @@
+function sumOfDistinctElements(Set1, Set2):
+    distinctElements = [] 
+    sum = 0  
+    for element in Set1:
+        if element not in distinctElements:
+            distinctElements.append(element)
+
+    for element in Set2:
+        if element not in distinctElements:
+            distinctElements.append(element)
+
+    for element in distinctElements:
+        sum = sum + element
+
+    return sum
